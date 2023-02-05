@@ -141,9 +141,11 @@ p {
 }
 
 .contact-heder {
-    display: block;
+    display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
+    align-items: center;
+    gap: 10px;
 
     color: var(--main-light);
     font-weight: 500;
@@ -381,22 +383,34 @@ p {
   gap: 30px;
 }
 
+.client-item {
+    width: 170px;
+    height: 92px;
+}
+
 .client-link {
-    display: block;
-    padding: 16px 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: transparent;
+
     border: 1px solid var(--main-icon-color);
     border-radius: 4px;
+    width: 100%;
+    height: 100%;
 }
 
 .icon-client {
     fill: var(--main-icon-color);
 }
 
-.client-link:hover {
+.client-link:hover,
+.client-link:focus {
     border-color: var(--main-accent);
 }
 
-.client-link:hover .icon-client {
+.client-link:hover .icon-client,
+.client-link:focus .icon-client {
     fill: var(--main-accent);
 }
 
@@ -537,7 +551,13 @@ p {
     margin-bottom: 30px;
 }
 
-.works-list .item:hover {
+/* .works-list .item:hover,
+.works-list .item:focus {
+box-shadow: 0px 1px 1px var(--secondary-dark-12), 0px 4px 4px var(--secondary-dark-6), 1px 4px 6px var(--secondary-dark-16);
+} */
+
+.work:hover,
+.work:focus {
 box-shadow: 0px 1px 1px var(--secondary-dark-12), 0px 4px 4px var(--secondary-dark-6), 1px 4px 6px var(--secondary-dark-16);
 }
 
@@ -553,7 +573,7 @@ box-shadow: 0px 1px 1px var(--secondary-dark-12), 0px 4px 4px var(--secondary-da
 }
 
 .poster {
-    vertical-align: top;
+    display: block;
 }
 
 .work-title {
