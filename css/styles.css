@@ -472,7 +472,7 @@ p {
 
 .footer-wrapper {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     gap: 70px;
 }
 
@@ -551,11 +551,6 @@ p {
     margin-bottom: 30px;
 }
 
-/* .works-list .item:hover,
-.works-list .item:focus {
-box-shadow: 0px 1px 1px var(--secondary-dark-12), 0px 4px 4px var(--secondary-dark-6), 1px 4px 6px var(--secondary-dark-16);
-} */
-
 .work:hover,
 .work:focus {
 box-shadow: 0px 1px 1px var(--secondary-dark-12), 0px 4px 4px var(--secondary-dark-6), 1px 4px 6px var(--secondary-dark-16);
@@ -570,6 +565,8 @@ box-shadow: 0px 1px 1px var(--secondary-dark-12), 0px 4px 4px var(--secondary-da
 
 .work {
     text-decoration: none;
+    display: block;
+    outline: transparent;
 }
 
 .poster {
